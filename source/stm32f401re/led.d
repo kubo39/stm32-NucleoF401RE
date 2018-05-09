@@ -20,7 +20,7 @@ Colors for LED.
 */
 enum Color : ubyte
 {
-    XXX = 0x05,
+    Green = 0x05,
 }
 
 
@@ -58,10 +58,10 @@ struct Led
     }
 }
 
-__gshared Led[1] LEDS = [Led(Color.XXX)];
+__gshared Led[1] LEDS = [Led(Color.Green)];
 
 void initLED()
 {
     auto gpioa = powerOnGPIO!"GPIOA"();
-    gpioa.setMode(Color.XXX, Mode.Out);
+    gpioa.setMode(Color.Green, Mode.Out);
 }
