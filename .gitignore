@@ -1,0 +1,6 @@
+*~
+*.[oas]
+*.ll
+*.bc
+*.bin
+.gdb_history
